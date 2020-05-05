@@ -52,6 +52,7 @@ function notAthorized() {
 
 	function logIn(event) {
 		if (loginInput.value == '') {
+			event.preventDefault();
 			alert("Строка 'логин' пуста");
 		} else {
 			event.preventDefault();
