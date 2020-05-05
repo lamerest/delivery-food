@@ -51,7 +51,7 @@ function notAthorized() {
 	console.log('Not authorized');
 
 	function logIn(event) {
-		if (loginInput.value == '') {
+		if (loginInput.value) {
 			event.preventDefault();
 			alert("Строка 'логин' пуста");
 		} else {
